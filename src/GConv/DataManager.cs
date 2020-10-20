@@ -43,8 +43,7 @@ namespace GConv
             {
                 foreach (var i in items)
                 {
-                    string line = $"{i.Date},{i.Glucose},{i.MeasurementType}";
-                    sw.WriteLine(line);
+                    sw.WriteLine(i.ToString());
                 }
             }
 

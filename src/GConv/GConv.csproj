@@ -2,7 +2,16 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <PublishSingleFile>false</PublishSingleFile>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>ksasao</Authors>
+    <Company>ksasao</Company>
+    <PackageProjectUrl>https://github.com/ksasao/GConv</PackageProjectUrl>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
 
 </Project>
